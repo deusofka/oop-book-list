@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200; }
+
+body {
+  width: fit-content;
+  font-size: 1rem;
+  margin: auto;
+  background-color: #191919;
+  color: #fff; }
+  body main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin: auto;
+    margin-top: 2.5%;
+    height: inherit; }
+    body main section {
+      padding: 0.5rem;
+      position: relative; }
+      body main section h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 8rem;
+        text-align: center; }
+      body main section form label {
+        display: block;
+        padding: 0.25rem 0 0.25rem 0; }
+      body main section form input {
+        font-size: 1.15rem;
+        display: block;
+        width: 35rem;
+        color: #fff;
+        background-color: inherit;
+        outline: none;
+        border: none;
+        border-bottom: solid #fff 1px;
+        border-radius: 1px;
+        margin-top: 1rem;
+        padding: 0 0; }
+      body main section form button {
+        width: 100%;
+        font-size: 4rem;
+        font-weight: 300;
+        padding: 0.25rem 0.75rem;
+        margin-top: 0.5rem;
+        border: none;
+        outline: none;
+        background-color: #fff; }
+        body main section form button:nth-of-type(2) {
+          display: none; }
+      body main section table {
+        width: 35rem;
+        padding-left: 0; }
+        body main section table th,
+        body main section table td {
+          border-bottom: #fff solid 1px;
+          padding: 0.67rem 0.33rem;
+          text-align: left;
+          word-wrap: break; }
+          body main section table th:nth-of-type(2),
+          body main section table td:nth-of-type(2) {
+            text-align: left; }
+          body main section table th:nth-of-type(3),
+          body main section table td:nth-of-type(3) {
+            text-align: right; }
+          body main section table th:nth-of-type(4),
+          body main section table td:nth-of-type(4) {
+            padding-right: 0;
+            width: 2rem;
+            color: red;
+            text-align: center;
+            font-weight: 400; }
+        body main section table th {
+          background-color: #222;
+          text-align: left;
+          font-weight: 300; }
+          body main section table th:nth-of-type(3) {
+            padding-right: 1rem; }
+        body main section table tr:nth-of-type(even) {
+          background-color: #222; }
+        body main section table tr:last-of-type td {
+          border: none; }

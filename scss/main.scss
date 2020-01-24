@@ -1,0 +1,131 @@
+// Variables
+$light-color: #fff;
+$light-color-sc: #ddd;
+$dark-color: #191919;
+$dark-color-sc: #222;
+$disabled-color: #ffffff80;
+
+$theme-color: red;
+$theme-color-sc: green;
+$theme-color-tr: #4444ff;
+$theme-color-qt: rgb(255, 145, 0);
+
+// General
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+// Styling
+body {
+  width: fit-content;
+  font-size: 1rem;
+  margin: auto;
+  background-color: $dark-color;
+  color: $light-color;
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    margin: auto;
+    margin-top: 2.5%;
+    height: inherit;
+
+    section {
+      padding: 0.5rem;
+      position: relative;
+
+      h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 8rem;
+        text-align: center;
+      }
+
+      form {
+        label {
+          display: block;
+          padding: 0.25rem 0 0.25rem 0;
+        }
+
+        input {
+          font-size: 1.15rem;
+          display: block;
+          width: 35rem;
+          color: $light-color;
+          background-color: inherit;
+          outline: none;
+          border: none;
+          border-bottom: solid $light-color 1px;
+          border-radius: 1px;
+          margin-top: 1rem;
+          padding: 0 0;
+        }
+
+        button {
+          width: 100%;
+          font-size: 4rem;
+          font-weight: 300;
+          padding: 0.25rem 0.75rem;
+          margin-top: 0.5rem;
+          border: none;
+          outline: none;
+          background-color: $light-color;
+          &:nth-of-type(2) {
+            display: none;
+          }
+        }
+      }
+
+      table {
+        width: 35rem;
+        padding-left: 0;
+        th,
+        td {
+          border-bottom: $light-color solid 1px;
+          padding: 0.67rem 0.33rem;
+          text-align: left;
+          word-wrap: break;
+          &:nth-of-type(2) {
+            text-align: left;
+          }
+          &:nth-of-type(3) {
+            text-align: right;
+          }
+          &:nth-of-type(4) {
+            padding-right: 0;
+            width: 2rem;
+            color: $theme-color;
+            text-align: center;
+            font-weight: 400;
+          }
+        }
+        th {
+          background-color: $dark-color-sc;
+          text-align: left;
+          font-weight: 300;
+          &:nth-of-type(3) {
+            padding-right: 1rem;
+          }
+        }
+
+        tr {
+          &:nth-of-type(even) {
+            background-color: $dark-color-sc;
+          }
+
+          &:last-of-type {
+            td {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
